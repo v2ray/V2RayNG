@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.v2ray.ang">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!--<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />-->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name=".AngApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ui.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.ServerActivity"
+            android:windowSoftInputMode="stateUnchanged" />
+        <activity
+            android:name=".ui.SettingsActivity"
+            android:label="@string/title_settings" />
+        <activity
+            android:name=".ui.PerAppProxyActivity"
+            android:label="@string/title_pref_per_app_proxy" />
+        <activity android:name=".ui.ScannerActivity" />
+
+        <service
+            android:name=".service.V2RayVpnService"
+            android:enabled="true"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:permission="android.permission.BIND_VPN_SERVICE"
+            android:process=":RunSoLibV2RayDaemon" />
+
+        <!--<receiver android:name=".receiver.BootBroadcastReceiver">-->
+        <!--<intent-filter>-->
+        <!--<action android:name="android.intent.action.BOOT_COMPLETED" />-->
+        <!--<category android:name="android.intent.category.LAUNCHER" />-->
+        <!--</intent-filter>-->
+        <!--</receiver>-->
+    </application>
+
+</manifest>

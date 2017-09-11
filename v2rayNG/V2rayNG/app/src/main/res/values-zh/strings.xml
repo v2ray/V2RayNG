@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">v2rayNG</string>
+    <string name="app_widget_name">开关</string>
+
+    <!-- Notifications -->
+    <string name="notification_action_stop_v2ray">停止</string>
+    <string name="toast_permission_denied">无法取得权限</string>
+    <string name="notification_action_more">点击了解更多</string>
+    <string name="toast_services_start">启动服务中</string>
+    <string name="toast_services_success">启动服务成功</string>
+    <string name="toast_services_failure">启动服务失败</string>
+
+    <!--ServerActivity-->
+    <string name="title_server">服务器</string>
+    <string name="menu_item_add_config">添加配置</string>
+    <string name="menu_item_save_config">保存配置</string>
+    <string name="menu_item_del_config">删除配置</string>
+    <string name="menu_item_import_config_qrcode">扫描二维码</string>
+    <string name="menu_item_import_config_clipboard">从剪贴板导入</string>
+    <string name="menu_item_import_config_manually">手动输入</string>
+    <string name="del_config_comfirm">确认删除？</string>
+    <string name="server_lab_remarks">别名(remarks)</string>
+    <string name="server_lab_address">地址(address)</string>
+    <string name="server_lab_port">端口(port)</string>
+    <string name="server_lab_id">用户ID(id)</string>
+    <string name="server_lab_alterid">额外ID(alterId)</string>
+    <string name="server_lab_security">加密方式(security)</string>
+    <string name="server_lab_network">传输协议(network)</string>
+    <string name="server_lab_more_function">功能设置（不清楚则保持默认值）</string>
+    <string name="server_lab_head_type">伪装类型(type)</string>
+    <string name="server_lab_request_host">Tcp伪装域名(host)</string>
+    <string name="server_lab_stream_security">底层传输安全</string>
+    <string name="toast_success">成功</string>
+    <string name="toast_failure">失败</string>
+    <string name="toast_none_data">没有数据</string>
+    <string name="toast_incorrect_protocol">不正确的协议</string>
+    <string name="toast_decoding_failed">解码失败</string>
+
+    <!-- PerAppProxyActivity -->
+    <string name="msg_dialog_progress">正在加载</string>
+    <string name="menu_item_select_all">全选</string>
+    <string name="switch_bypass_apps_on">选中的应用不走代理</string>
+    <string name="switch_bypass_apps_off">选中的应用走代理</string>
+
+    <!-- Preferences -->
+    <string name="title_settings">设置</string>
+    <string name="title_about">关于</string>
+
+    <string name="title_pref_bypass_mainland">绕过大陆地址</string>
+    <string name="summary_pref_bypass_mainland">绕过大陆地址</string>
+
+    <string name="title_pref_per_app_proxy">分应用代理</string>
+    <string name="summary_pref_per_app_proxy">分应用代理仅支持 Android 5.0 Lollipop 及更高</string>
+
+    <string name="title_pref_feedback">反馈</string>
+    <string name="summary_pref_feedback">反馈改进或漏洞至 GitHub</string>
+
+    <string name="title_pref_version">版本</string>
+
+    <string-array name="share_method">
+        <item>二维码</item>
+        <item>导出至剪贴板</item>
+    </string-array>
+</resources>

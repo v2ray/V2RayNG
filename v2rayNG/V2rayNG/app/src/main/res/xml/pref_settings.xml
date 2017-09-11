@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/title_settings">
+        <CheckBoxPreference
+            android:key="pref_bypass_mainland"
+            android:summary="@string/summary_pref_bypass_mainland"
+            android:title="@string/title_pref_bypass_mainland" />
+
+        <CheckBoxPreference
+            android:key="pref_per_app_proxy"
+            android:summary="@string/summary_pref_per_app_proxy"
+            android:title="@string/title_pref_per_app_proxy" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/title_about">
+        <Preference
+            android:key="pref_licenses"
+            android:title="@string/notices_title" />
+
+        <Preference
+            android:key="pref_feedback"
+            android:summary="@string/summary_pref_feedback"
+            android:title="@string/title_pref_feedback" />
+
+        <Preference
+            android:key="pref_version"
+            android:title="@string/title_pref_version" />
+    </PreferenceCategory>
+</PreferenceScreen>

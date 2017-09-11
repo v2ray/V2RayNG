@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="securitys" translatable="false">
+        <item>chacha20-poly1305</item>
+        <item>aes-128-cfb</item>
+        <item>aes-128-gcm</item>
+        <item>none</item>
+    </string-array>
+
+    <string-array name="networks" translatable="false">
+        <item>tcp</item>
+        <item>kcp</item>
+        <item>ws</item>
+    </string-array>
+
+    <string-array name="headertypes" translatable="false">
+        <item>none</item>
+        <item>http</item>
+        <item>srtp</item>
+        <item>utp</item>
+        <item>wechat-video</item>
+    </string-array>
+
+    <string-array name="headertypetcps" translatable="false">
+        <item>none</item>
+        <item>http</item>
+    </string-array>
+
+    <string-array name="headertypekcps" translatable="false">
+        <item>none</item>
+        <item>srtp</item>
+        <item>utp</item>
+        <item>wechat-video</item>
+    </string-array>
+
+    <string-array name="streamsecuritys" translatable="false">
+        <item></item>
+        <item>tls</item>
+    </string-array>
+</resources>

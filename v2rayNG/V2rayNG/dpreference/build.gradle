@@ -1,0 +1,26 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion Integer.parseInt("$compileSdkVer")
+    buildToolsVersion "$buildToolsVer"
+
+    defaultConfig {
+        minSdkVersion 17
+        targetSdkVersion Integer.parseInt("$targetSdkVer")
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile "com.android.support:support-annotations:$supportLibVersion"
+
+    compile 'com.google.code.gson:gson:2.7'
+}
